@@ -1,6 +1,6 @@
 # PRISM
 
-Reference implementation of **PRISM: Process-Aware Offline Reinforcement Learning with Confidence-Calibrated Self-Correction for Long-Horizon Tool-Using Language Agents**.
+Implementation of **PRISM: Process-Aware Offline Reinforcement Learning with Confidence-Calibrated Self-Correction for Long-Horizon Tool-Using Language Agents**.
 
 PRISM trains a tool-using LLM agent on ALFWorld, WebShop, and ScienceWorld by combining (i) Monte Carlo step-level reward labels, (ii) a process reward model, (iii) a Platt-calibrated trajectory confidence head, (iv) implicit Q-learning critics, (v) advantage-weighted regression over a LoRA-adapted LLaMA-3.1-8B-Instruct policy, and (vi) confidence-gated self-correction at inference time.
 
