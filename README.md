@@ -101,7 +101,7 @@ Written to `--output_dir`:
 
 | Stage | Optimizer | LR | Batch | Horizon | Other |
 |---|---|---|---|---|---|
-| PRM φ | AdamW | 1.5e-5 | 32 | 20 epochs | λ_MSE = 0.5 |
+| PRM φ | AdamW | 1.5e-5 | 32 | 20 epochs | λ(MSE) = 0.5 |
 | Conf ξ | AdamW | 1.0e-5 | 32 | 20 epochs | Platt scaling on 670-traj pool |
 | IQL (V, Q) | AdamW | 5.0e-5 | 64 | 50k steps | τ = 0.7, γ = 0.99 |
 | AWR π(η) | AdamW | 1.0e-4 | 16 | 1 epoch | β = 3.0, LoRA rank 16, α = 32 |
