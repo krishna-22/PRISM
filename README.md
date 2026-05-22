@@ -66,7 +66,7 @@ This executes Stages A → B1 → B2 → B3 → B4 → C (Sec. IV of the paper).
 | B2 | Train the PRM (BCE + MSE) and the Platt-calibrated confidence head | IV-C, IV-D |
 | B3 | Train IQL value & action-value critics (expectile τ = 0.7) | IV-E |
 | B4 | Extract the LoRA-adapted policy with AWR (β = 3.0) | IV-F |
-| C | Evaluate with PRM re-scoring and confidence-gated reflection (K = 3, τ_low = 0.45, τ_abort = 0.20) | IV-G |
+| C | Evaluate with PRM re-scoring and confidence-gated reflection (K = 3, τ(low) = 0.45, τ(abort) = 0.20) | IV-G |
 
 ### Useful CLI flags
 
@@ -104,7 +104,7 @@ Written to `--output_dir`:
 | PRM φ | AdamW | 1.5e-5 | 32 | 20 epochs | λ_MSE = 0.5 |
 | Conf ξ | AdamW | 1.0e-5 | 32 | 20 epochs | Platt scaling on 670-traj pool |
 | IQL (V, Q) | AdamW | 5.0e-5 | 64 | 50k steps | τ = 0.7, γ = 0.99 |
-| AWR π_η | AdamW | 1.0e-4 | 16 | 1 epoch | β = 3.0, LoRA rank 16, α = 32 |
+| AWR π(η) | AdamW | 1.0e-4 | 16 | 1 epoch | β = 3.0, LoRA rank 16, α = 32 |
 
 ---
 
