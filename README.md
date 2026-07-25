@@ -227,4 +227,4 @@ README_PRISM.md     this file
 
 ## 8. License
 
-The implementation is released for research use. The base model (LLaMA-3.1-8B-Instruct) and encoder (DeBERTa-v3-base) follow their respective upstream licenses. The benchmarks are distributed by their original authors under their own licenses.
+The implementation is released for research use. The base model (LLaMA-3.1-8B-Instruct) and encoder (DeBERTa-v3-base) follow their respective upstream licenses. 
